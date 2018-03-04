@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+    background-image: url('../images/select.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    position: absolute;
+    right: 40%;
+    color: purple;
+    font-family: 'sevillana';
+}
+
+.good {
+    max-width: 50%;
+    color: yellow;
+}
+
+.bad {
+    max-width: 50%;
+    color: blue;
+}
+
+ /*.discord {
+    height: 100px;
+    width: 100px;
+}
+
+.chrysalis {
+    height: 100px;
+    width: 100px;
+}
+
+.sombra {
+    height: 100px;
+    width: 100px;
+}
+
+.storm {
+    height: 100px;
+    width: 100px;
+}
+
+.tirek {
+    height: 100px;
+    width: 100px;
+}
+*/
+
+.goodCar {
+    padding-top: 350px;
+}
+
+.badCar {
+    
+    padding-top: 350px;
+}
+
+.fighting1 {
+    margin-top: 50px;
+    background: rgba(255,255,255,.5);
+}
+
+.fighting2 {
+    margin-top: 50px;
+    background: rgba(255,255,255,.5);
+}
+
+.fighting3 {
+    margin-top: 50px;
+    background: rgba(255,255,255,.5);
+}

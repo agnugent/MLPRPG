@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Sevillana' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/RPG.css">
+    <title>My Little Pony</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>My Little Pony RPG</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="good float-left" src="assets/images/Good/good.png">
+                <h2 class="good float-left">Good</h2>
+            </div>
+            <div class="col-sm-6">
+                <img class="bad float-right" src="assets/images/bad/Bad.png">
+                <h2 class="bad float-right">Evil</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col offset-sm-1"></div>
+            <div class="col" id="goodCar">
+                <div class="pony" id="apple">
+                    <img class="apple goodCar" id="apple" src="assets/images/Good/caracters/apple.png">
+                    <h6 class="apple goodCarAtt" id="appleAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="goodCar">
+                <div class="pony" id="fluttershy">
+                    <img class="fluttershy goodCar" id="fluttershy" src="assets/images/Good/caracters/fluttershy.png">
+                    <h6 class="fluttershy goodCarAtt" id="fluttershyAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="goodCar">
+                <div class="pony" id="pinkie">
+                    <img class="pinkie goodCar" id="pinkie" src="assets/images/Good/caracters/pinkie.png">
+                    <h6 class="pinkie goodCarAtt" id="pinkieAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="goodCar">
+                <div class="pony" id="rainbow">
+                    <img class="rainbow goodCar" id="rainbow" src="assets/images/Good/caracters/rainbow.png">
+                    <h6 class="rainbow goodCarAtt" id="rainbowAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id "goodCar">
+                <div class="pony" id="rarity">
+                    <img class="rarity goodCar" id="rarity" src="assets/images/Good/caracters/rarity.png">
+                    <h6 class="rarity goodCarAtt" id="rarityAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="goodCar">
+                <div class="pony" id="twilight">
+                    <img class="twilight goodCar" id="twilight" src="assets/images/Good/caracters/twilight.png">
+                    <h6 class="twilight goodCarAtt" id="twilightAtt"></h6>
+                </div>
+            </div>
+            <div class="col offset-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col offset-sm-1"></div>
+            <div class="col" id="badCar">
+                <div class="pony" id="chrysalis">
+                    <img class="chrysalis badCar" id="chrysalis" src="assets/images/bad/caracters/chrysalis.png">
+                    <h6 class="chrysalis badCarAtt" id="chrysalisAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="badCar">
+                <div class="pony" id="discord">
+                    <img class="discord badCar" id="discord" src="assets/images/bad/caracters/Discord.png">
+                    <h6 class="discord badCarAtt" id="discordAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="badCar">
+                <div class="pony" id="nightmare">
+                    <img class="nightmare badCar" id="nightmare" src="assets/images/bad/caracters/Nightmare.png">
+                    <h6 class="nightmare badCarAtt" id="nightmareAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="badCar">
+                <div class="pony" id="sombra">
+                    <img class="sombra badCar" id="sombra" src="assets/images/bad/caracters/sombra.png">
+                    <h6 class="sombra badCarAtt" id="sombraAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="badCar">
+                <div class="pony" id="storm">
+                    <img class="storm badCar" id="storm" src="assets/images/bad/caracters/Storm.png">
+                    <h6 class="storm badCarAtt" id="stormAtt"></h6>
+                </div>
+            </div>
+            <div class="col" id="badCar">
+                <div class="pony" id="tirek">
+                    <img class="tirek badCar" id="tirek" src="assets/images/bad/caracters/tirek.png">
+                    <h6 class="tirek badCarAtt" id="tirekAtt"></h6>
+                </div>
+            </div>
+            <div class="col offset-sm-1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card fighting1">
+                <button type="button" class="selectOpp btn btn-secondary btn-lg">select opponet</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card fighting2">
+                <button type="button" class="battle btn btn-warning btn-lg">Battle!!</button>
+                <button type="button" class="attackBtn btn btn-warning btn-lg">Attack!!</button>
+                <h2 class='result'></h2>
+                <button type="button" class="restart btn btn-error btn-lg">Restart Game</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card fighting3">
+                <button type="button" class="selectOppBad btn btn-secondary btn-lg">select opponet</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="assets/javascript/RPG.js"></script>
+
+</html>
